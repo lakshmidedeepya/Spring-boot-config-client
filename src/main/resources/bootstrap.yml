@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Springcloudclient
+  cloud:
+    config:
+      uri: http://localhost:8083
+      fail-fast: true
+server:
+  port: 8084
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
